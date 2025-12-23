@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: gainsboro;
+}
+ /* Top Bar */
+.top-bar {
+    background: grey;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+/* Navigation */
+nav {
+    background: rgb(253, 252, 252);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    box-shadow: 0px 2px 5px rgba(70, 68, 68, 0.1);
+    align-items: center;
+}
+.logoofweb{
+   margin-left: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: -150px;
+
+}
+
+.logo span {
+    color: purple;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.nav-link li a:hover{
+    color: green;
+    direction: underline;
+}
+
+.submit-btn {
+    background: purple;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+header h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Buildings , .flats, .villa, h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    
+}
+.property .Buildings{
+    display: flex;
+    justify-content: center;
+    
+}
+.Buildings img{
+    height: 200px;
+    gap: 50px;
+    width: 300px;
+    margin: 0.5cm;
+    border-radius: 20px;
+    border:solid black;
+}
+
+.property .flats{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+.flat1 img{
+    height: 200px;
+    gap: 50px;
+    width: 300px;
+    margin: 0.5cm;
+    border-radius: 20px;
+    border:solid black;
+}
+
+.villa{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+.villa .villa1 img{
+    height: 200px;
+    gap: 50px;
+    width: 300px;
+    margin: 0.5cm;
+    border-radius: 20px;
+    border:solid black;
+}
+.Buildings , .villa, img:hover{
+    padding: 5px;
+}

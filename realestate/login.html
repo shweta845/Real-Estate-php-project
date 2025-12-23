@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="./login.css">
+
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span>📞 7875006677</span>
+            <span>📧 DEMO@DEMO.COM</span>
+            <div class="auth-links">
+                <a href="./login.html">Login</a> | <a href="./registration.html">Register</a>
+            </div>
+        </div>
+        <nav>
+            <div class="logoofweb">
+            <img src="./logohome.png" alt="img" height="40px" width="80px">
+        </div>
+            <div class="logo"><span>REAL ESTATE</span></div>
+            
+            <ul class="nav-link">
+                <li><a href="./realestate.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="./properties.html">Properties</a></li>
+                <li><a href="./agent.html">Agent</a></li>
+                <li><a href="./registration.html">Register</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+            <a href="#" class="submit-btn">Submit Property</a>
+        </nav>
+    </header>
+    
+    <div class="login-container">
+        <h2>Login</h2>
+        <p>Access to our dashboard</p>
+
+        <form action="login.php" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="admin" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="login-btn">Login</button>
+            <p class="or-text">OR</p>
+
+            <p>Don't have an account? <a href="register.html">Register</a></p>
+        </form>
+    </div>
+</body>
+</html>

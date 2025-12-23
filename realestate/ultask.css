@@ -1,0 +1,63 @@
+.header {
+    display: flex;
+    background-color: grey;
+    border: 1px solid black;
+    width: 100%;
+}
+.logo {
+    font-size: larger;
+    display: flex;
+    align-items: center; 
+}
+.company-name {
+    margin-left: 10px; 
+    font-size: 20px;
+    display:flex ;
+    
+}
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 30px;
+}
+.top-bar {
+    display: flex;
+    padding-left: 600px;
+    word-spacing: 4px;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.button{
+    position: absolute;
+    cursor: pointer;
+    margin-left: 400px;
+}
+.menubar {
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(49, 47, 47);
+    padding: 10px;
+    color: #e1dbdb;
+}
+.menu {
+    gap: 80px;
+}
+.menu ul li {
+    display: inline;
+    margin-top: 10px;
+    line-height: 50px;
+    padding-top: 20px;
+    text-align: center;
+    text-size-adjust: 5px;
+}
+
+.menu ul li:hover {
+    background-color: rgb(97, 101, 97);
+    padding: 8px;
+    cursor: pointer;
+}

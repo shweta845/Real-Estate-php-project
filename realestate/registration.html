@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <link rel="stylesheet" href="./registration.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span>📞 7875006677</span>
+            <span>📧 DEMO@DEMO.COM</span>
+            <div class="auth-links">
+                <a href="./login.html">Login</a> | <a href="./registration.html">Register</a>
+            </div>
+        </div>
+        <nav>
+            <div class="logoofweb">
+            <img src="./logohome.png" alt="img" height="40px" width="80px">
+        </div>
+            <div class="logo"><span>REAL ESTATE</span></div>
+            
+            <ul class="nav-link">
+                <li><a href="./realestate.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="./properties.html">Properties</a></li>
+                <li><a href="./agent.html">Agent</a></li>
+                <li><a href="./registration.html">Register</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+            <a href="#" class="submit-btn">Submit Property</a>
+        </nav>
+    </header>
+    
+    <div class="register-container">
+        <h2>Register</h2>
+        <p>Access to our dashboard</p>
+
+        <form action="register.php" method="POST" enctype="multipart/form-data">
+            <label for="name">Your Name*</label>
+            <input type="text" id="name" name="name" placeholder="Your Name*" required>
+
+            <label for="username">Username*</label>
+            <input type="text" id="username" name="username" placeholder="admin" required>
+
+            <label for="phone">Your Phone*</label>
+            <input type="text" id="phone" name="phone" placeholder="Your Phone*" required>
+
+            <label for="password">Password*</label>
+            <input type="password" id="password" name="password" required>
+
+            <label>Role</label>
+            <div class="radio-group">
+                <input type="radio" id="user" name="role" value="User" checked>
+                <label for="user">User</label>
+
+                <input type="radio" id="agent" name="role" value="Agent">
+                <label for="agent">Agent</label>
+
+                <input type="radio" id="builder" name="role" value="Builder">
+                <label for="builder">Builder</label>
+            </div>
+
+            <label for="image">User Image</label>
+            <input type="file" id="image" name="image">
+
+            <button type="submit" class="register-btn">Register</button>
+
+            <p class="or-text">OR</p>
+
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </form>
+    </div>    
+</body>
+</html>

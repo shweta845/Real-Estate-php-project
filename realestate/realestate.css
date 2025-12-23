@@ -1,0 +1,637 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color:gainsboro;
+}
+/* Top Bar */
+.top-bar {
+    background: grey;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Navigation */
+nav {
+    background: rgb(253, 252, 252);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    box-shadow: 0px 2px 5px rgba(70, 68, 68, 0.1);
+    align-items: center;
+
+}
+
+
+.logoofweb{
+    margin-left: 10px;
+}
+ 
+ .logo {
+     font-size: 24px;
+     font-weight: bold;
+     margin-left: -150px;
+
+ 
+}
+
+.logo span {
+    color: purple;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.nav-link li a:hover{
+    color: green;
+    direction: underline;
+}
+
+.submit-btn {
+    background: purple;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('./background.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* .overlay { */
+    
+    /* padding: 50px; */
+    /* text-align: center; */
+    /* color: rgb(245, 243, 243); */
+    /* border-radius: 10px; */
+    
+/* } */
+.overlay {
+    text-align: center;
+    color: rgb(202, 200, 200);
+    background: rgba(77, 75, 75, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.overlay h2 span {
+    color: rgb(156, 33, 156);
+}
+
+.search-box {
+    display: flex;
+    margin-top: 20px;
+}
+
+.search-box select, 
+.search-box input {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    background: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+   
+}
+
+/*second portion*/
+.second-portion{
+    padding-top: 40px;
+    margin-left: 300px;
+    margin-right: 40px;
+    max-width: 60%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.second h1{
+    text-align: center;
+    font-size: 40px;
+    
+}
+.second-portion .service img{
+    height: 200px;
+    width: 200px;
+    margin-left: 70px;
+    margin-right: 1cm;
+    
+
+}
+.second-portion .service p{
+    text-align: center;
+    color: #333;
+    justify-content: center;
+    
+    
+}
+
+/* third section*/
+/* Section container */
+.why-choose-us{
+    margin-top: 100px;
+    justify-content: center;
+}
+.why-choose-us h1{
+    text-align: center;
+    font-size: 30px;
+}
+/* Title Section Styling */
+.title-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.title-section h1 {
+    font-size: 28px;
+}
+
+.title-section hr {
+    width: 80px;
+    margin: 10px auto;
+    border: 1px solid #1dcdb0;
+}
+
+/* Container for Content and Image */
+.container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Text Content Styling */
+.text-content {
+    position: absolute;
+    z-index: 2;
+    width: 40%;
+    color: white;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.4); /* Adding dark background for better visibility */
+}
+
+.text-content h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.text-content .feature {
+    margin-bottom: 20px;
+}
+
+.text-content h3 {
+    color: #1dcdb0;
+}
+/* Image Styling */
+.image-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./happy_family.jpg') no-repeat center center;
+    background-size: cover;
+    margin-left: 80px;
+    z-index: 1;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .text-content {
+        width: 80%;
+    }
+}
+
+/* Title Section Styling */
+.title-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.title-section h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.title-section hr {
+    width: 80px;
+    height: 3px;
+    background-color: #1dcdb0;
+    border: none;
+    margin: 0 auto;
+}
+/* How It Works Section */
+.how-it-works {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+    width: 80%;
+}
+
+.step {
+    text-align: center;
+    width: 70%;
+   
+}
+
+.circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.circle img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.circle:hover{
+    border: 2px solid green;
+}
+.step-number {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: #1dcdb0;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.step h2 {
+    color: #2c3e50;
+    margin: 10px 0;
+}
+.step p:hover{
+    color:#00b894;
+}
+.step h2:hover{
+    color: #00b894;
+}
+.step p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Line Between Steps */
+.line {
+    width: 600px;
+    height: 2px;
+    direction: dot;
+    background-color: #ddd;
+}
+
+
+/*fifth section*/
+
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #051a31;
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 6px solid white;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.icon {
+    font-size: 40px;
+    color: #00b894;
+    font-style: normal;
+}
+
+.number {
+    font-size: 28px;
+    color: #00b894;
+    margin: 5px 0;
+}
+
+.label {
+    font-size: 14px;
+}
+
+/*sixth section */
+
+.sixth h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin-top: 1cm;
+}
+.places {
+    display: flex;
+    margin-left: 2.5cm;
+    margin-right: 2cm;
+    padding-left: 1cm;
+    
+}
+.place1{
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+    white-space: 15px;
+    text-decoration: dashed;
+    text-shadow: #051a31;
+    margin-left: 1cm;
+    
+}
+.places .place1 img{
+    height: 300px;
+    width: 250px;
+    display: block;
+    border-radius: 10px;
+    transition: transform o.5s;
+    margin-left: 10px;
+    margin-right: 10px;
+    filter: blur(2px);
+    gap: 10px;
+    
+}
+.places .place1 p{
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 50px;
+}
+.places .place1 img:hover{
+    filter: contrast(100%);
+    cursor: pointer;
+}
+/*seventh */
+.seventh{
+    justify-content: center;
+    display: block;
+    
+}
+.slider-container {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+.testimonial {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+
+}
+.testimonial h3 {
+    color: yellow;
+}
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.nav-button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.nav-button:hover {
+    background-color: darkgreen;
+}
+
+/*seven*/
+ /* .slider-container {
+                    margin-top: 25px;
+                    width: 70%;
+                    max-width: 1000px;   
+                    text-align: center;
+                    position: relative;
+                    overflow: hidden;
+                    margin-left: 350px;
+                }
+                .slides {
+                    display: flex;
+                    transition: transform 0.5s ease-in-out;
+                }
+                .testimonial {
+                    min-width: 100%;
+                    box-sizing: border-box;
+                    padding: 20px;
+                    background-color: green;
+                    color: white;
+                    border-radius: 8px;
+                }
+                .testimonial h3 {
+                    color: yellow;
+                }
+                .navigation {
+                    position: absolute;
+                    top: 50%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    transform: translateY(-50%);
+                }
+                .nav-button {
+                    background-color: green;
+                    border: none;
+                    color: white;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+                .nav-button:hover {
+                    background-color: darkgreen;
+                } */
+                .slider-container {
+                    margin-top: 25px;
+                    width: 100%;
+                    max-width: 1000px;   
+                    text-align: center;
+                    position: relative;
+                    overflow: hidden;
+                    margin-left: 350px;
+                    display: flex;
+                }
+                .slides {
+                    display: flex;
+                    transition: transform 0.5s ease-in-out;
+                }
+                .testimonial {
+                    min-width: 100%;
+                    box-sizing: border-box;
+                    padding: 20px;
+                    background-color: green;
+                    color: white;
+                    border-radius: 8px;
+                }
+                .testimonial {
+                    min-width: 50%;
+                    box-sizing: border-box;
+                    padding: 20px;
+                    background-color: green;
+                    color: white;
+                    border-radius: 30px;
+                    margin-right: 20%;
+                }
+                .testimonial h3 {
+                    color: yellow;
+                }
+                .navigation {
+                    position: absolute;
+                    top: 50%;
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-between;
+                    transform: translateY(-50%);
+                }
+/*eight*/
+/* .map{
+    width:100%;
+    height:40%;
+    margin-left: 30%;
+    padding: 100px;
+} */
+
+
+/* footer-section */
+.footer-section{
+    display: flex;
+    margin-top: 25px;
+    background-color: #011c38;
+    color: #f5f5f5;
+}
+
+.footer1 img{
+    height: 70px;
+}
+.footer1{
+    margin-left: 150px;
+    height: 300px;
+    width: 30%;
+    
+}         
+.footer2{
+    justify-content: space-between;
+    height: 300px;
+    width: 20%;
+}
+.footer3{
+    justify-content: space-between;
+    height: 300px;
+    width: 20%;
+}
+.footer4{
+    justify-content: space-between;
+    height: 300px;
+    width: 20%;
+}
+.footer2 h1 ,.footer3 h1, .footer4 h1{
+    font-size: 30px;
+}
+.footer-section-end{
+    border-top: solid;
+
+}
+.end{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-section:hover{
+    cursor: pointer;
+    text-decoration: dotted;
+}
+.footer1 :hover {
+    color: #69abf2;
+}
+.footer2 li:hover{
+    color: #69abf2;
+}
+.footer3 p:hover
+{
+    color: #69abf2;
+}
+.footer4 li:hover
+{
+    color: #69abf2;
+}
